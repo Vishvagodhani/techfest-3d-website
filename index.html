@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="TECHFEST — an interactive 3D scroll experience for a science and technology festival.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2307080a'/%3E%3Crect x='10' y='10' width='12' height='12' fill='%235cc8ff' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
+<title>TECHFEST — Enter the Next Dimension</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div id="ld"><span>TECHFEST</span><i></i></div>
+<div id="bar"></div>
+<div id="hs"></div>
+<header class="nav">
+ <a class="logo" href="#home" data-go="home">TECHFEST</a>
+ <nav id="nv"><a href="#home" data-go="home">Home</a><a href="#innovation" data-go="innovation">Innovation</a><a href="#technology" data-go="technology">Technology</a><a href="#experience" data-go="experience">Experience</a><a href="#future" data-go="future">Future</a></nav>
+ <button id="mb" aria-label="Toggle menu">Menu</button>
+</header>
+<main>
+<section id="home"><div class="hero">
+ <p class="tag" data-r>Annual festival of science &amp; technology</p>
+ <h1 data-r>TECHFEST</h1>
+ <h2 data-r>Enter the next dimension</h2>
+ <p data-r>Where ideas become technology and technology becomes the future.</p>
+ <div class="cta" data-r><a class="btn" href="#innovation" data-go="innovation">Explore Techfest</a><a class="lnk" href="#showcase" data-go="showcase">Enter the experience <span>→</span></a></div>
+</div><div class="scroll">Scroll</div></section>
+
+<section id="innovation"><div class="stick"><div class="r">
+ <p class="tag" data-r>01 — Innovation</p>
+ <h2 class="big" data-r>Ideas that move the world</h2>
+ <p data-r style="margin-top:28px">Every Techfest starts with a question nobody has answered yet. Student builders, researchers and makers turn those questions into prototypes you can touch, break and improve.</p>
+ <ul class="pts" data-r><li>Open challenges set with industry and research labs</li><li>Prototype first — nothing is judged on slides alone</li><li>Mentors who have shipped hardware and software at scale</li></ul>
+</div></div></section>
+
+<section id="technology"><div class="stick">
+ <div><p class="tag" data-r>02 — Technology</p><h2 class="big" data-r>Three frontiers.<br>One core.</h2></div>
+ <div class="panel"><div class="tl">
+  <button data-i="0">Robotics <i>01</i></button><button data-i="1">Artificial Intelligence <i>02</i></button><button data-i="2">Space Technology <i>03</i></button></div>
+  <p id="ti">Hover an object — or pick a field.</p></div>
+</div></section>
+
+<section id="experience">
+ <p class="tag" data-r>03 — Experience</p>
+ <h2 class="big" data-r>More than a festival</h2>
+ <div class="rows">
+  <div class="row" style="--o:0" data-r><b>01</b><h3>Competitions</h3><p>Robotics arenas, coding duels and design sprints with real stakes.</p></div>
+  <div class="row" style="--o:10" data-r><b>02</b><h3>Exhibitions</h3><p>Working prototypes from labs and student teams, open to touch.</p></div>
+  <div class="row" style="--o:20" data-r><b>03</b><h3>Workshops</h3><p>Hands-on sessions: solder it, train it, launch it.</p></div>
+  <div class="row" style="--o:10" data-r><b>04</b><h3>Talks</h3><p>Engineers and founders on what is being built and what broke.</p></div>
+  <div class="row" style="--o:0" data-r><b>05</b><h3>Innovation</h3><p>The open floor where an idea meets people who can build it.</p></div>
+ </div>
+</section>
+
+<section id="showcase"><div class="stick">
+ <div><p class="tag" data-r>04 — Showcase</p><h2 class="big" data-r>The Techfest core</h2></div>
+ <div id="cap"><b>Drag to rotate</b><p>Hover or tap a module to inspect it.</p></div>
+</div></section>
+
+<section id="future"><div class="stick">
+ <p class="tag" data-r>05 — Future</p>
+ <h2 class="big" data-r>Build what comes next.</h2>
+ <p data-r>The future belongs to those who imagine it, build it and dare to push beyond what is possible.</p>
+</div></section>
+
+<section id="cta">
+ <p class="tag" data-r>Techfest</p>
+ <h2 class="big" data-r>Ready to enter the future?</h2>
+ <div class="cta" data-r><a class="btn" href="#innovation" data-go="innovation">Explore Techfest</a><a class="lnk" href="#home" data-go="home">Start the journey <span>→</span></a></div>
+ <footer><span>Techfest — Science &amp; Technology Festival</span><span>Build what comes next</span></footer>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+</body></html>
